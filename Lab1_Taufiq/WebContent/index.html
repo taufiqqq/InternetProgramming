@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* Apply a light blue background to the form */
+        body {
+            margin: 0 100px;
+            background-color: lightblue;
+        }
+        
+        hr{
+        border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <hr><br>
+
+    <form action="RegistrationServlet" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Data Engineering">Data Engineering</option>
+            <option value="Bioinformatics">Bioinformatics</option>
+            <option value="Network and Security">Network and Security</option>
+            <option value="Graphics and Multimedia">Graphics and Multimedia</option>
+        </select><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <p>Languages:</p>
+        <input type="checkbox" id="english" name="languages" value="English">
+        <label for="english">English</label><br>
+        <input type="checkbox" id="malay" name="languages" value="Malay">
+        <label for="malay">Malay</label><br>
+        <input type="checkbox" id="mandarin" name="languages" value="Mandarin">
+        <label for "mandarin">Mandarin</label><br><br>
+
+        <label for="transportation">Transportation:</label><br>
+        <select id="transportation" name="transportation" multiple>
+            <option value="Bus">Bus</option>
+            <option value="Car">Car</option>
+            <option value="Motorcycle">Motorcycle</option>
+            <option value="Bicycle">Bicycle</option>
+            <option value="Walking">Walking</option>
+        </select><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="address">Current Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

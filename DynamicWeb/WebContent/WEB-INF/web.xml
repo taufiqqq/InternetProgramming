@@ -19,4 +19,24 @@
     <servlet-name>calculatorServlet</servlet-name>
     <url-pattern>/calculatorServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletOne</display-name>
+    <servlet-name>ServletOne</servlet-name>
+    <servlet-class>com.tutorial.ServletOne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletOne</servlet-name>
+    <url-pattern>/ServletOne</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletTwo</display-name>
+    <servlet-name>ServletTwo</servlet-name>
+    <servlet-class>com.tutorial.ServletTwo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletTwo</servlet-name>
+    <url-pattern>/ServletTwo</url-pattern>
+  </servlet-mapping>
 </web-app>
